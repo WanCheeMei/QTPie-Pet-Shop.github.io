@@ -1,0 +1,7 @@
+Hello, Chee Mei here! For the qtpieshop database import might be too large for the packet. Therefore, you can change the sql packet file by adding in the database qtpieshop SQL:
+
+"SET GLOBAL max_allowed_packet=16777216;"
+
+
+and press the "Go" button. Thank you very much and have a nice day! :)
+

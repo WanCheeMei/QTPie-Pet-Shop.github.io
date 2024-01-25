@@ -1,0 +1,407 @@
+/*----------------------Style for navigation----------------------------------*/
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffcd91;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.logo {
+  margin-top: 1%;
+}
+
+.logo img {
+  height: 100px;
+  width: auto;
+}
+
+nav {
+  flex-grow: 1;
+  text-align: center;
+  margin-left: auto;
+  margin-top:-4%;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+  font-size:20px;
+  color:#000;
+  
+}
+
+nav  ul  li {
+  display: inline-block;
+  position: relative;
+  margin-right: 25px;
+}
+nav ul li:last-child {
+  margin-right: 0; /* remove margin from last element */
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffcd91;
+}
+
+nav ul ul li {
+  display: block;
+  width: 200px;
+}
+
+nav ul ul a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul ul a:hover {
+  background-color: #ffcd91;
+}
+
+nav > ul > li:hover > ul {
+  display: block;
+}
+.admin_logout{
+    margin-left:95%;
+    margin-top:0.1%;
+}
+
+.admin_logout a {
+  display: inline-block;
+  padding: 10px;
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.admin_logout a:hover {
+  background-color: #FF8C00;
+}
+/*----------------------Style for admin_register------------------------------*/
+/* Styles for the form */
+.register-form {
+  width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.register-form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  display: block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+/*----------------------Style for admin_login---------------------------------*/
+main {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+}
+
+h2 {
+  font-size: 28px;
+  margin-top: 0px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+.error {
+  color: red;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.register-link {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.register-link a {
+  color: #333;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+/*----------------------Style for admin_view_feedback-------------------------*/
+/* Style for the feedback table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  font-size: 16px;
+}
+
+table th,
+table td {
+  padding: 12px 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+table th {
+  background-color: #F6B352;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+table tr:nth-child(even) td {
+  background-color: #f2f2f2;
+}
+
+table tr:hover td {
+  background-color: #ddd;
+}
+/*----------------------Style for admin_add_product---------------------------*/
+.add_product_container {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  margin-top:5%;
+}
+
+.add_product_container h2 {
+  margin-top: 0;
+}
+
+.add_product_container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add_product_container label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.add_product_container input,
+.add_product_container textarea,
+.add_product_container select{
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.add_product_container input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add_product_container input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.add_product_container input[type="file"] {
+  margin-bottom: 0;
+}
+
+.add_product_container textarea {
+  height: 150px;
+}
+
+.add_product_container label.error {
+  color: red;
+  margin-bottom: 10px;
+}
+/*----------------------Style for admin_edit_product--------------------------*/
+.edit_product_container {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  margin-top: 5%;
+}
+
+.edit_product_container h1 {
+  margin-top: 0;
+}
+
+.edit_product_container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit_product_container label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.edit_product_container input,
+.edit_product_container textarea,
+.edit_product_container select {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.edit_product_container input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.edit_product_container input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.edit_product_container input[type="file"] {
+  margin-bottom: 0;
+}
+
+.edit_product_container textarea {
+  height: 150px;
+}
+
+.edit_product_container label.error {
+  color: red;
+  margin-bottom: 10px;
+}
+/*----------------------Style for admin_add_pet-------------------------------*/
+.add_pet_container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin-top: 5%;
+  }
+
+  .add_pet_container h1 {
+    margin-top: 0;
+  }
+
+  .add_pet_container form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .add_pet_container label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .add_pet_container input,
+  .add_pet_container textarea,
+  .add_pet_container select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  .add_pet_container input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .add_pet_container input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+
+  .add_pet_container textarea {
+    height: 150px;
+  }
+
+  .add_pet_container label.error {
+    color: red;
+    margin-bottom: 10px;
+  }
+
+
